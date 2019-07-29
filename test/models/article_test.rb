@@ -1,8 +1,5 @@
 require 'test_helper'
 
-class ArticleTest < ActiveSupport::TestCase
-  validates_presence_of(:title)
-  # test "the truth" do
-  #   assert true
-  # end
+cclass Article < ApplicationRecord
+  validates :title, presence: true
 end
